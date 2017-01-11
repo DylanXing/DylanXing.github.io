@@ -199,10 +199,17 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <p>决定开始使用markdown来写文章，这里记录下一些常用用方，以便以后写作需要时参考，会陆续纳入用到的一些语法和效果展示。</p>
-<h4 id="第一目标是标题"><a href="#第一目标是标题" class="headerlink" title="第一目标是标题"></a>第一目标是标题</h4><p><code>以上是####的效果，一个#最大，到六个#最多</code></p>
-<h4 id="下面是代码块效果，三个"><a href="#下面是代码块效果，三个" class="headerlink" title="下面是代码块效果，三个`"></a>下面是代码块效果，三个`</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">这是在代码块中的内容</div><div class="line">可以换行</div></pre></td></tr></table></figure>
-<h4 id="代码块中的语法高亮效果"><a href="#代码块中的语法高亮效果" class="headerlink" title="代码块中的语法高亮效果"></a>代码块中的语法高亮效果</h4><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *tmp = <span class="string">@"hello"</span>;</div><div class="line">可能在编辑器中看不到实时预览效果，我们将在blog上进行验证</div></pre></td></tr></table></figure>
-<h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p>如果需要展示数据什么的，可以选择使用表格哦</p>
+<h4 id="第一目标是标题"><a href="#第一目标是标题" class="headerlink" title="第一目标是标题"></a>第一目标是标题</h4><ul>
+<li><p><code>以上是####的效果，一个#最大，到六个#最小</code></p>
+</li>
+<li><h6 id="六个-的效果"><a href="#六个-的效果" class="headerlink" title="六个#的效果"></a>六个#的效果</h6></li>
+<li><p><code>下面是代码块效果，三个</code></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">这是在代码块中的内容</div><div class="line">可以换行</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="代码块中的语法高亮效果"><a href="#代码块中的语法高亮效果" class="headerlink" title="代码块中的语法高亮效果"></a>代码块中的语法高亮效果</h4><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *tmp = <span class="string">@"hello"</span>;</div></pre></td></tr></table></figure>
+<pre><code>可能在编辑器中看不到实时预览效果，我们将在blog上进行验证
+</code></pre><h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p>如果需要展示数据什么的，可以选择使用表格</p>
 <table>
 <thead>
 <tr>
@@ -225,8 +232,8 @@ var _hmt = _hmt || [];
 </tr>
 </tbody>
 </table>
-<p>好像编辑器也无法预览表格效果</p>
-<h4 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h4><ul>
+<pre><code>好像编辑器也无法预览表格效果
+</code></pre><h4 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h4><ul>
 <li>列表的作用<ul>
 <li>实现段落感</li>
 <li>二级段落下面是一个tab位置<ul>
