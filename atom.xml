@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>邢迪的平行时空</title>
+  <subtitle>伪极客，Karen&#39;s Lover</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://xingdi.me/"/>
+  <updated>2017-01-11T08:58:11.000Z</updated>
+  <id>http://xingdi.me/</id>
+  
+  <author>
+    <name>邢迪的平行时空</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>开始使用markDown</title>
+    <link href="http://xingdi.me/2017/01/11/%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8markDown/"/>
+    <id>http://xingdi.me/2017/01/11/开始使用markDown/</id>
+    <published>2017-01-11T06:59:41.000Z</published>
+    <updated>2017-01-11T08:58:11.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>决定开始使用markdown来写文章，这里记录下一些常用用方，以便以后写作需要时参考，会陆续纳入用到的一些语法和效果展示。</p>
+<h4 id="第一目标是标题"><a href="#第一目标是标题" class="headerlink" title="第一目标是标题"></a>第一目标是标题</h4><ul>
+<li><p><code>以上是####的效果，一个#最大，到六个#最小</code></p>
+</li>
+<li><h6 id="六个-的效果"><a href="#六个-的效果" class="headerlink" title="六个#的效果"></a>六个#的效果</h6></li>
+<li><p><code>下面是代码块效果，三个</code></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">这是在代码块中的内容</div><div class="line">可以换行</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="代码块中的语法高亮效果"><a href="#代码块中的语法高亮效果" class="headerlink" title="代码块中的语法高亮效果"></a>代码块中的语法高亮效果</h4><figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *tmp = <span class="string">@"hello"</span>;</div><div class="line"><span class="built_in">NSLog</span>(<span class="string">@"这是一个高亮测试%@"</span>,tmp);</div></pre></td></tr></table></figure>
+<pre><code>可能在编辑器中看不到实时预览效果，我们将在blog上进行验证，实现如下：
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">NSString</span> *tmp = <span class="string">@"hello"</span>;</div></pre></td></tr></table></figure>
+</code></pre><h4 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h4><p>如果需要展示数据什么的，可以选择使用表格</p>
+<table>
+<thead>
+<tr>
+<th>header 1</th>
+<th>header 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cell 1</td>
+<td>cell 2</td>
+</tr>
+<tr>
+<td>cell 3</td>
+<td>cell 4</td>
+</tr>
+<tr>
+<td>cell 5</td>
+<td>cell 6</td>
+</tr>
+</tbody>
+</table>
+<pre><code>实现如下。好像编辑器也无法预览表格效果
+| header 1 | header 3 |
+| -------- | -------- |
+| cell 1   | cell 2   |
+| cell 3   | cell 4   |
+| cell 5   | cell 6   |
+</code></pre><h4 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h4><ul>
+<li>列表的作用<ul>
+<li>实现段落感</li>
+<li>二级段落下面是一个tab位置<ul>
+<li>三级段落再加一个tab位置</li>
+<li>同样是三级段落</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>下面是上面效果的原文</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">- 列表的作用</div><div class="line">	- 实现段落感</div><div class="line">	- 二级段落下面是一个tab位置</div><div class="line">		- 三级段落再加一个tab位置</div><div class="line">		- 同样是三级段落</div></pre></td></tr></table></figure>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">这是一个[链接](xingdi.me)</div></pre></td></tr></table></figure>
+<p>这是一个<a href="xingdi.me">链接</a>,在macDown编辑器中可以直接将文字选中，按快捷键command+shift+k来生成链接格式，只需要在小括号中填入链接地址即可</p>
+<h4 id="图片引用"><a href="#图片引用" class="headerlink" title="图片引用"></a>图片引用</h4><p>图片引用使用<code>![]()</code>的方式<br><img src="http://siwangxinyuan.qiniudn.com/jianshu-42-1280x800-%5BDesktopNexus.com%5D.jpg?imageView/2/w/640/q/90" alt="图片测试"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">![图片测试](http://siwangxinyuan.qiniudn.com/jianshu-42-1280x800-%5BDesktopNexus.com%5D.jpg?imageView/2/w/640/q/90)</div></pre></td></tr></table></figure>
+<p>上图中的7牛图床链接，640为图片的宽度，可以自定义设置</p>
+<h6 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h6><p>本文由<a href="xingdi.me">邢迪</a>创作和发表，采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br>本文链接：<a href="http://xingdi.me/2017/01/11/开始使用markDown/">http://xingdi.me/2017/01/11/开始使用markDown/</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;决定开始使用markdown来写文章，这里记录下一些常用用方，以便以后写作需要时参考，会陆续纳入用到的一些语法和效果展示。&lt;/p&gt;
+&lt;h4 id=&quot;第一目标是标题&quot;&gt;&lt;a href=&quot;#第一目标是标题&quot; class=&quot;headerlink&quot; title=&quot;第一目标是标题&quot;&gt;
+    
+    </summary>
+    
+    
+      <category term="markdown" scheme="http://xingdi.me/tags/markdown/"/>
+    
+      <category term="macdown" scheme="http://xingdi.me/tags/macdown/"/>
+    
+      <category term="blog" scheme="http://xingdi.me/tags/blog/"/>
+    
+      <category term="开发记录" scheme="http://xingdi.me/tags/%E5%BC%80%E5%8F%91%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>helloHexo</title>
+    <link href="http://xingdi.me/2017/01/09/helloHexo/"/>
+    <id>http://xingdi.me/2017/01/09/helloHexo/</id>
+    <published>2017-01-09T09:48:54.000Z</published>
+    <updated>2017-01-09T09:49:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>2017狠下心买了域名，虽然没多少钱。<br>以后博客就在这里了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;2017狠下心买了域名，虽然没多少钱。&lt;br&gt;以后博客就在这里了。&lt;/p&gt;
+
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="http://xingdi.me/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+</feed>
