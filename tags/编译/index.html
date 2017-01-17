@@ -6,32 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://xingdi.me">
-  <title>编译和链接做了什么 | 邢迪的平行时空</title>
+  <title>Tag: 编译 | 邢迪的平行时空</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="代码由人类可读语言变为机器可读，需要经历以下几个步骤
-预处理-&amp;gt;编译-&amp;gt;汇编-&amp;gt;链接
-这个过程在我们目前的开过中，基本都由IDE来完成了，以Xcode为例，我们还能在Run一个程序的过程中，看到提示进入到了哪个阶段，比如最后执行前会有一个Linking。越臃肿的工程，linking的时间越久，我们在这篇文章中会试图找出原因。
-预处理预处理一般做了以下工作：
-- 删除所有的 #de">
-<meta property="og:type" content="article">
-<meta property="og:title" content="编译和链接做了什么">
-<meta property="og:url" content="http://xingdi.me/2017/01/17/编译和链接做了什么/index.html">
+  <meta name="description" content="技术宅，伪极客，dota1玩家，目前居住在深圳">
+<meta property="og:type" content="website">
+<meta property="og:title" content="邢迪的平行时空">
+<meta property="og:url" content="http://xingdi.me/tags/编译/index.html">
 <meta property="og:site_name" content="邢迪的平行时空">
-<meta property="og:description" content="代码由人类可读语言变为机器可读，需要经历以下几个步骤
-预处理-&amp;gt;编译-&amp;gt;汇编-&amp;gt;链接
-这个过程在我们目前的开过中，基本都由IDE来完成了，以Xcode为例，我们还能在Run一个程序的过程中，看到提示进入到了哪个阶段，比如最后执行前会有一个Linking。越臃肿的工程，linking的时间越久，我们在这篇文章中会试图找出原因。
-预处理预处理一般做了以下工作：
-- 删除所有的 #de">
-<meta property="og:image" content="http://siwangxinyuan.qiniudn.com/jianshu-42-1280x800-%5BDesktopNexus.com%5D.jpg?imageView/2/w/640/q/90">
-<meta property="og:updated_time" content="2017-01-17T08:50:28.000Z">
+<meta property="og:description" content="技术宅，伪极客，dota1玩家，目前居住在深圳">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="编译和链接做了什么">
-<meta name="twitter:description" content="代码由人类可读语言变为机器可读，需要经历以下几个步骤
-预处理-&amp;gt;编译-&amp;gt;汇编-&amp;gt;链接
-这个过程在我们目前的开过中，基本都由IDE来完成了，以Xcode为例，我们还能在Run一个程序的过程中，看到提示进入到了哪个阶段，比如最后执行前会有一个Linking。越臃肿的工程，linking的时间越久，我们在这篇文章中会试图找出原因。
-预处理预处理一般做了以下工作：
-- 删除所有的 #de">
-<meta name="twitter:image" content="http://siwangxinyuan.qiniudn.com/jianshu-42-1280x800-%5BDesktopNexus.com%5D.jpg?imageView/2/w/640/q/90">
+<meta name="twitter:title" content="邢迪的平行时空">
+<meta name="twitter:description" content="技术宅，伪极客，dota1玩家，目前居住在深圳">
   
   
     <link rel="icon" href="/img/favicon.ico">
@@ -192,92 +177,36 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-编译和链接做了什么" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      编译和链接做了什么
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/01/17/编译和链接做了什么/" class="archive-article-date">
+  	<time datetime="2017-01-17T05:58:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/01/17/编译和链接做了什么/">编译和链接做了什么</a>
     </h1>
   
 
-        
-        <a href="/2017/01/17/编译和链接做了什么/" class="archive-article-date">
-  	<time datetime="2017-01-17T05:58:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-01-17</time>
-</a>
-        
-      </header>
-
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>代码由人类可读语言变为机器可读，需要经历以下几个步骤</p>
-<p><code>预处理-&gt;编译-&gt;汇编-&gt;链接</code></p>
-<p>这个过程在我们目前的开过中，基本都由IDE来完成了，以Xcode为例，我们还能在Run一个程序的过程中，看到提示进入到了哪个阶段，比如最后执行前会有一个Linking。越臃肿的工程，linking的时间越久，我们在这篇文章中会试图找出原因。</p>
-<h5 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a>预处理</h5><p>预处理一般做了以下工作：</p>
-<pre><code>- 删除所有的 #define 并展开所有宏定义
-- 处理所有预编译条件，#if,#ifdef,#elif等
-- 处理#include,将所有文件插入到该位置（递归引用，所以可能引起互相引用）
-- 删除所有注释
-- 添加行号和文件名标识 (#2&quot;hello.c&quot;2)
-- 保留所有#pragma编译器指令 (比如结构体对齐标准)
-</code></pre><p>预处理后的.i文件不包括任何宏，如果我们无法判断宏定义是否正确或头文件是否正确被包含，可以查看预编译后的文件。</p>
-<h5 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h5><p>编译过程将预处理完的文件进行语法分析与相关优化，生成出相应的汇编代码文件（注意是汇编代码）。目前gcc把预编译和编译合并成一个步骤，使用ccl完成</p>
-<p><code>gcc -S hello.c -o hello.s</code></p>
-<pre><code>&quot;对于C语言的代码来说，这个预编译和编译的程序是cc1，对于C++来说，有对应的程序叫做cc1plus；Objective-C是cc1obj；fortran是f771；Java是jc1。所以实际上gcc这个命令只是这些后台程序的包装，它会根据不同的参数要求去调用预编译编译程序cc1、汇编器as、链接器ld。&quot;
-                --《程序员的自我修养：链接，装载和库》
-</code></pre><h5 id="汇编"><a href="#汇编" class="headerlink" title="汇编"></a>汇编</h5><p>汇编器将汇编代码转变成机器可以执行的指令，每一个汇编语句对应一条机器指令。所以汇编器的汇编过程相对于编译器来讲比较简单，它没有复杂的语法，也没有语义，也不需要做指令优化，只是根据汇编指令和机器指令的对照表一一翻译就可以了，“汇编”这个名字也来源于此。上面的汇编过程我们可以调用汇编器as来完成：</p>
-<p><code>$as hello.s –o hello.o</code></p>
-<p>或者：</p>
-<p>或者使用gcc命令从C源代码文件开始，经过预编译、编译和汇编直接输出目标文件（Object File）：<br><code>$gcc –c hello.c –o hello.o</code></p>
-<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p>经过复杂的扫描、语法分析、语义分析、源代码优化、代码生成和目标代码优化，编译器忙活了这么多个步骤以后，源代码终于被编译成了目标代码。这会引发我们一个思考，目标代码中有变量定义在其他模块，怎么办？事实上，定义其他模块的全局变量和函数在最终运行时的绝对地址都要在最终链接的时候才能确定。所以现代的编译器可以将一个源代码文件编译成一个未链接的目标文件，然后由链接器最终将这些目标文件链接起来形成可执行文件。<br>最基本的链接方式如下图所示：<br><img src="http://siwangxinyuan.qiniudn.com/jianshu-42-1280x800-%5BDesktopNexus.com%5D.jpg?imageView/2/w/640/q/90" alt="链接过程"></p>
-<p>每个模块的源代码文件（如.c）文件经过编译器编译成目标文件（Object File，一般扩展名为.o或.obj），目标文件和库（Library）一起链接形成最终可执行文件。</p>
-<pre><code>而最常见的库就是运行时库（Runtime Library），它是支持程序运行的基本函数的集合。库其实是一组目标文件的包，就是一些最常用的代码编译成目标文件后打包存放
-
-比如我们在程序模块main.c中使用另外一个模块func.c中的函数foo()。我们在main.c模块中每一处调用foo的时候都必须确切知道foo这个函数的地址，但是由于每个模块都是单独编译的，在编译器编译main.c的时候它并不知道foo函数的地址，所以它暂时把这些调用foo的指令的目标地址搁置，等待最后链接的时候由链接器去将这些指令的目标地址修正。如果没有链接器，须要我们手工把每个调用foo的指令进行修正，则填入正确的foo函数地址。当func.c模块被重新编译，foo函数的地址有可能改变时，那么我们在main.c中所有使用到foo的地址的指令将要全部重新调整。这些繁琐的工作将成为程序员的噩梦。使用链接器，你可以直接引用其他模块的函数和全局变量而无须知道它们的地址，因为链接器在链接的时候，会根据你所引用的符号 foo，自动去相应的func.c模块查找foo的地址，然后将main.c模块中所有引用到foo的指令重新修正，让它们的目标地址为真正的foo函数的地址。这就是静态链接的最基本的过程和作用。
-</code></pre><p>备注：本文摘自《程序员的自我修养：链接、装载与库》俞甲子</p>
-<h6 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h6><p>本文由<a href="xingdi.me">邢迪</a>创作和发表，采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br>本文链接：<a href="http://xingdi.me/2017/01/17/编译和链接做了什么/">http://xingdi.me/2017/01/17/编译和链接做了什么/</a></p>
-
-      
-        
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我喝咖啡<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/aliPay.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/img/wxPay.JPG">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -301,106 +230,19 @@ var _hmt = _hmt || [];
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://xingdi.me/2017/01/17/编译和链接做了什么/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
   
   
-    <a href="/2017/01/11/开始使用markDown/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">开始使用markDown</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-
-
-
-
-  
-  <div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="编译和链接做了什么" data-title="编译和链接做了什么" data-url="http://xingdi.me/2017/01/17/编译和链接做了什么/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"xingdi"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
-
+    </div></section>
   
 
-
+    
 
 
           </div>
@@ -428,9 +270,9 @@ var _hmt = _hmt || [];
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

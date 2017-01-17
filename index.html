@@ -200,7 +200,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="编译和链接做了什么"><a href="#编译和链接做了什么" class="headerlink" title="编译和链接做了什么"></a>编译和链接做了什么</h4><p>代码由人类可读语言变为机器可读，需要经历以下几个步骤</p>
+        <p>代码由人类可读语言变为机器可读，需要经历以下几个步骤</p>
 <p><code>预处理-&gt;编译-&gt;汇编-&gt;链接</code></p>
 <p>这个过程在我们目前的开过中，基本都由IDE来完成了，以Xcode为例，我们还能在Run一个程序的过程中，看到提示进入到了哪个阶段，比如最后执行前会有一个Linking。越臃肿的工程，linking的时间越久，我们在这篇文章中会试图找出原因。</p>
 <h5 id="预处理"><a href="#预处理" class="headerlink" title="预处理"></a>预处理</h5><p>预处理一般做了以下工作：</p>
@@ -224,7 +224,8 @@ var _hmt = _hmt || [];
 <pre><code>而最常见的库就是运行时库（Runtime Library），它是支持程序运行的基本函数的集合。库其实是一组目标文件的包，就是一些最常用的代码编译成目标文件后打包存放
 
 比如我们在程序模块main.c中使用另外一个模块func.c中的函数foo()。我们在main.c模块中每一处调用foo的时候都必须确切知道foo这个函数的地址，但是由于每个模块都是单独编译的，在编译器编译main.c的时候它并不知道foo函数的地址，所以它暂时把这些调用foo的指令的目标地址搁置，等待最后链接的时候由链接器去将这些指令的目标地址修正。如果没有链接器，须要我们手工把每个调用foo的指令进行修正，则填入正确的foo函数地址。当func.c模块被重新编译，foo函数的地址有可能改变时，那么我们在main.c中所有使用到foo的地址的指令将要全部重新调整。这些繁琐的工作将成为程序员的噩梦。使用链接器，你可以直接引用其他模块的函数和全局变量而无须知道它们的地址，因为链接器在链接的时候，会根据你所引用的符号 foo，自动去相应的func.c模块查找foo的地址，然后将main.c模块中所有引用到foo的指令重新修正，让它们的目标地址为真正的foo函数的地址。这就是静态链接的最基本的过程和作用。
-</code></pre><p>备注：本文摘自《程序员的自我修养：链接、装载与库》俞甲子###### 版权声明<br>本文由<a href="xingdi.me">邢迪</a>创作和发表，采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br>本文链接：<a href="http://xingdi.me/2017/01/17/编译和链接做了什么/">http://xingdi.me/2017/01/17/编译和链接做了什么/</a></p>
+</code></pre><p>备注：本文摘自《程序员的自我修养：链接、装载与库》俞甲子</p>
+<h6 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h6><p>本文由<a href="xingdi.me">邢迪</a>创作和发表，采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br>本文链接：<a href="http://xingdi.me/2017/01/17/编译和链接做了什么/">http://xingdi.me/2017/01/17/编译和链接做了什么/</a></p>
 
       
         
@@ -238,7 +239,19 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">-编译 -链接 -Propressing -Linking</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">编译</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">链接</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Propressing</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">Linking</a>
         		</li>
       		
 		</ul>
@@ -569,11 +582,23 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">编译</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">-编译 -链接 -Propressing -Linking</a>
+                <a href="javascript:void(0)" class="js-tag color3">链接</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">Propressing</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">Linking</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
