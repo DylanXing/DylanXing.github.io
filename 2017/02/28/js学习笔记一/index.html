@@ -8,25 +8,22 @@
   <link rel="dns-prefetch" href="http://xingdi.me">
   <title>js学习笔记一 | 邢迪的平行时空</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#####在html中使用JavaSCripts
-把JavaScript插入到HTML页面中要使用&amp;lt;script&amp;gt;元素。使用这个元素可以把JavaScript嵌入到HTML页面中，让脚本与标记混合在一起；也可以包含外部的JavaScript文件。而我们需要注意的地方有：
+  <meta name="description" content="在html中使用JavaSCripts把JavaScript插入到HTML页面中要使用&amp;lt;script&amp;gt;元素。使用这个元素可以把JavaScript嵌入到HTML页面中，让脚本与标记混合在一起；也可以包含外部的JavaScript文件。而我们需要注意的地方有：
 
-在包含外部JavaScript文件时，必须将src属性设置为指向相应文件的URL。而这个文件既可以是与包含它的页面">
+在包含外部JavaScript文件时，必须将src属性设置为指向相应文件的URL。而这个文件既可以是与包含它的页面位于同一个服">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js学习笔记一">
 <meta property="og:url" content="http://xingdi.me/2017/02/28/js学习笔记一/index.html">
 <meta property="og:site_name" content="邢迪的平行时空">
-<meta property="og:description" content="#####在html中使用JavaSCripts
-把JavaScript插入到HTML页面中要使用&amp;lt;script&amp;gt;元素。使用这个元素可以把JavaScript嵌入到HTML页面中，让脚本与标记混合在一起；也可以包含外部的JavaScript文件。而我们需要注意的地方有：
+<meta property="og:description" content="在html中使用JavaSCripts把JavaScript插入到HTML页面中要使用&amp;lt;script&amp;gt;元素。使用这个元素可以把JavaScript嵌入到HTML页面中，让脚本与标记混合在一起；也可以包含外部的JavaScript文件。而我们需要注意的地方有：
 
-在包含外部JavaScript文件时，必须将src属性设置为指向相应文件的URL。而这个文件既可以是与包含它的页面">
-<meta property="og:updated_time" content="2017-02-28T07:27:34.000Z">
+在包含外部JavaScript文件时，必须将src属性设置为指向相应文件的URL。而这个文件既可以是与包含它的页面位于同一个服">
+<meta property="og:updated_time" content="2017-02-28T07:33:41.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js学习笔记一">
-<meta name="twitter:description" content="#####在html中使用JavaSCripts
-把JavaScript插入到HTML页面中要使用&amp;lt;script&amp;gt;元素。使用这个元素可以把JavaScript嵌入到HTML页面中，让脚本与标记混合在一起；也可以包含外部的JavaScript文件。而我们需要注意的地方有：
+<meta name="twitter:description" content="在html中使用JavaSCripts把JavaScript插入到HTML页面中要使用&amp;lt;script&amp;gt;元素。使用这个元素可以把JavaScript嵌入到HTML页面中，让脚本与标记混合在一起；也可以包含外部的JavaScript文件。而我们需要注意的地方有：
 
-在包含外部JavaScript文件时，必须将src属性设置为指向相应文件的URL。而这个文件既可以是与包含它的页面">
+在包含外部JavaScript文件时，必须将src属性设置为指向相应文件的URL。而这个文件既可以是与包含它的页面位于同一个服">
   
   
     <link rel="icon" href="/img/favicon.ico">
@@ -208,8 +205,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#####在html中使用JavaSCripts</p>
-<p>把JavaScript插入到HTML页面中要使用<code>&lt;script&gt;</code>元素。使用这个元素可以把JavaScript嵌入到HTML页面中，让脚本与标记混合在一起；也可以包含外部的JavaScript文件。而我们需要注意的地方有：</p>
+        <h5 id="在html中使用JavaSCripts"><a href="#在html中使用JavaSCripts" class="headerlink" title="在html中使用JavaSCripts"></a>在html中使用JavaSCripts</h5><p>把JavaScript插入到HTML页面中要使用<code>&lt;script&gt;</code>元素。使用这个元素可以把JavaScript嵌入到HTML页面中，让脚本与标记混合在一起；也可以包含外部的JavaScript文件。而我们需要注意的地方有：</p>
 <ul>
 <li><p>在包含外部JavaScript文件时，必须将src属性设置为指向相应文件的URL。而这个文件既可以是与包含它的页面位于同一个服务器上的文件，也可以是其他任何域中的文件。所有<code>&lt;script&gt;</code>元素都会按照它们在页面中出现的先后顺序依次被解析。在不使用defer和async属性的情况下，只有在解析完前面<code>&lt;script&gt;</code>元素中的代码之后，才会开始解析后面<code>&lt;script&gt;</code>元素中的代码。</p>
 </li>
@@ -217,15 +213,13 @@ var _hmt = _hmt || [];
 </li>
 <li>使用<code>async</code>属性可以表示当前脚本不必等待其他脚本，也不必阻塞文档呈现。不能保证异步脚本按照它们在页面中出现的顺序执行。<br>另外，使用<code>&lt;noscript&gt;</code>元素可以指定在不支持脚本的浏览器中显示的替代内容。但在启用了脚本的情况下，浏览器不会显示<code>&lt;noscript&gt;</code>元素中的任何内容。</li>
 </ul>
-<p>#####严格模式<br>在严格模式下，ECMAScript 3中的一些不确定的行为将得到处理，而且对某些不安全的操作也会抛出错误。要在整个脚本中启用严格模式，可以在顶部添加如下代码：<br><code>&quot;use strict&quot;;</code><br>这行代码看起来像是字符串，而且也没有赋值给任何变量，但其实它是一个编译指示（pragma），用于告诉支持的JavaScript引擎切换到严格模式。这是为不破坏ECMAScript 3语法而特意选定的语法。<br>在函数内部的上方包含这条编译指示，也可以指定函数在严格模式下执行：</p>
+<h5 id="严格模式"><a href="#严格模式" class="headerlink" title="严格模式"></a>严格模式</h5><p>在严格模式下，ECMAScript 3中的一些不确定的行为将得到处理，而且对某些不安全的操作也会抛出错误。要在整个脚本中启用严格模式，可以在顶部添加如下代码：<br><code>&quot;use strict&quot;;</code><br>这行代码看起来像是字符串，而且也没有赋值给任何变量，但其实它是一个编译指示（pragma），用于告诉支持的JavaScript引擎切换到严格模式。这是为不破坏ECMAScript 3语法而特意选定的语法。<br>在函数内部的上方包含这条编译指示，也可以指定函数在严格模式下执行：</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">doSomething</span>(<span class="params"></span>)</span>&#123;</div><div class="line"><span class="meta">	"use strict"</span>;</div><div class="line">	<span class="comment">//函数体</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>严格模式下，JavaScript的执行结果会有很大不同,支持严格模式的浏览器包括IE10+、Firefox 4+、Safari 5.1+、Opera 12+和Chrome.</p>
-<p>#####null和undefined</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> message;</div><div class="line"><span class="comment">//var age  并没有声明age</span></div><div class="line">alert(message);<span class="comment">//"undefined"</span></div><div class="line">alert(age);<span class="comment">// 产生错误</span></div><div class="line">alert(<span class="keyword">typeof</span> message);<span class="comment">//"undefined"</span></div><div class="line">alert(<span class="keyword">typeof</span> age);<span class="string">"undefined"</span></div></pre></td></tr></table></figure>
+<h5 id="null和undefined"><a href="#null和undefined" class="headerlink" title="null和undefined"></a>null和undefined</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> message;</div><div class="line"><span class="comment">//var age  并没有声明age</span></div><div class="line">alert(message);<span class="comment">//"undefined"</span></div><div class="line">alert(age);<span class="comment">// 产生错误</span></div><div class="line">alert(<span class="keyword">typeof</span> message);<span class="comment">//"undefined"</span></div><div class="line">alert(<span class="keyword">typeof</span> age);<span class="string">"undefined"</span></div></pre></td></tr></table></figure>
 <p>对未初始化和未声明的变量执行<code>typeof</code>操作符都返回了<code>undefined</code>值；这个结果有其逻辑上的合理性。因为虽然这两种变量从技术角度看有本质区别，但实际上无论对哪种变量也不可能执行真正的操作。无论在什么情况下都没有必要把一个变量的值显式地设置为<code>undefined</code>，可是同样的规则对<code>null</code>却不适用。换句话说，只要意在保存对象的变量还没有真正保存对象，就应该明确地让该变量保存<code>null</code>值。如下用法:</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> car = <span class="literal">null</span>;</div><div class="line">...</div><div class="line">if(car!=<span class="literal">null</span>)&#123;</div><div class="line">	<span class="keyword">do</span> something <span class="keyword">for</span> car;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>#####布尔值</p>
-<ul>
+<h5 id="布尔值"><a href="#布尔值" class="headerlink" title="布尔值"></a>布尔值</h5><ul>
 <li>javascript中的布尔值只有小写<code>true</code>和<code>false</code></li>
 <li>不能直接将1看为<code>true</code>,将0看为<code>false</code>,而应该统一用Boolean()函数来处理。</li>
 </ul>
@@ -267,8 +261,7 @@ var _hmt = _hmt || [];
 </table>
 <p>Boolean()函数会自动执行转换，所以如下是成立的</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> message = <span class="string">"helloWorld"</span></div><div class="line"><span class="keyword">if</span> (message)&#123;</div><div class="line">	alert(<span class="string">"value is true"</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>#####数值</p>
-<ul>
+<h5 id="数值"><a href="#数值" class="headerlink" title="数值"></a>数值</h5><ul>
 <li>保存浮点数需要的内存空间是保存整数值的两倍。</li>
 <li>var floatNum = 3.125e7; //等于31250000</li>
 <li>在进行算术计算时其精确度远远不如整数。例如，0.1加0.2的结果不是0.3，而是0.30000000000000004。这个小小的舍入误差会导致无法测试特定的浮点数值。<code>永远不要测试特定的浮点数</code></li>
@@ -284,14 +277,12 @@ var _hmt = _hmt || [];
 <li>有3个函数可以把非数值转换为数值：Number()、parseInt()和parseFloat()。</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num1 = <span class="built_in">parseInt</span>(<span class="string">"1234blue"</span>); <span class="comment">//1234</span></div><div class="line"><span class="keyword">var</span> num2 = <span class="built_in">parseInt</span>(<span class="string">"blue1234"</span>); <span class="comment">//NaN</span></div><div class="line"><span class="keyword">var</span> num3 = <span class="built_in">parseInt</span>(<span class="string">"0xA"</span>); <span class="comment">//10(16进制）</span></div><div class="line"><span class="keyword">var</span> num4 = <span class="built_in">parseInt</span>(<span class="string">"22.5"</span>); <span class="comment">//22</span></div><div class="line"><span class="keyword">var</span> num5 = <span class="built_in">parseInt</span>(<span class="string">"10"</span>,<span class="number">16</span>); <span class="comment">//16 (按16进制解析)</span></div><div class="line">多数情况下，我们要解析的都是十进制数值，因此始终将<span class="number">10</span>作为第二个参数是非常必要的。</div></pre></td></tr></table></figure>
-<p>#####字符串</p>
-<ul>
+<h5 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h5><ul>
 <li>单引号和双引号完全没有区别</li>
 <li>字符串不可变，改变变量保存的字符串，其实是销毁加重新生成的过程。</li>
 <li>使用<code>toString()</code>方法把任意值转为字符串，除了null和undefined。</li>
 </ul>
-<p>#####object类型</p>
-<p>Object的每个实例都具有下列属性和方法。</p>
+<h5 id="object类型"><a href="#object类型" class="headerlink" title="object类型"></a>object类型</h5><p>Object的每个实例都具有下列属性和方法。</p>
 <ul>
 <li>Constructor：保存着用于创建当前对象的函数。对于前面的例子而言，构造函数（constructor）就是Object()。</li>
 <li>hasOwnProperty（propertyName）：用于检查给定的属性在当前对象实例中（而不是在实例的原型中）是否存在。其中，作为参数的属性名（propertyName）必须以字符串形式指定（例如：o.hasOwnProperty（”name”））。</li>
@@ -301,8 +292,7 @@ var _hmt = _hmt || [];
 <li>toString()：返回对象的字符串表示。</li>
 <li>valueOf()：返回对象的字符串、数值或布尔值表示。通常与toString()方法的返回值相同。</li>
 </ul>
-<p>#####特殊的语句</p>
-<ul>
+<h5 id="特殊的语句"><a href="#特殊的语句" class="headerlink" title="特殊的语句"></a>特殊的语句</h5><ul>
 <li>使用label语句可以在代码中添加标签，以便将来使用，一般都要与for语句等循环语句配合使用。</li>
 </ul>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num = <span class="number">0</span>;</div><div class="line">outermost:</div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;</div><div class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">0</span>;j&lt;<span class="number">10</span>;j++)&#123;</div><div class="line">		<span class="keyword">if</span>(i==<span class="number">5</span> &amp;&amp; j==<span class="number">5</span> )&#123;</div><div class="line">			<span class="keyword">break</span> outermost;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">alert(num);  <span class="comment">//55</span></div></pre></td></tr></table></figure>
@@ -317,8 +307,7 @@ var _hmt = _hmt || [];
 <ul>
 <li>严格模式下不允许使用with语句，会造成性能下降，同时调试代码会有困难。不建议使用。</li>
 </ul>
-<p>#####JS中的函数</p>
-<ul>
+<h5 id="JS中的函数"><a href="#JS中的函数" class="headerlink" title="JS中的函数"></a>JS中的函数</h5><ul>
 <li>任何函数在任何时候都可以通过return语句后跟要返回的值来实现返回值</li>
 <li>函数不介意传递进来多少个参数，也不在乎传进来参数是什么数据类型。也就是说，即便你定义的函数只接收两个参数，在调用这个函数时也未必一定要传递两个参数。可以传递一个、三个甚至不传递参数，而解析器永远不会有什么怨言。之所以会这样，原因是ECMAScript中的参数在内部是用一个数组来表示的。函数接收到的始终都是这个数组，而不关心数组中包含哪些参数（如果有参数的话）。如果这个数组中不包含任何元素，无所谓；如果包含多个元素，也没有问题。实际上，在函数体内可以通过arguments对象来访问这个参数数组，从而获取传递给函数的每一个参数。</li>
 </ul>
@@ -326,8 +315,7 @@ var _hmt = _hmt || [];
 <ul>
 <li>由于上条原因，JS中的函数<code>没有重载</code></li>
 </ul>
-<p>###以上内容摘自JavaScript高级程序设计（第3版）前三章要点</p>
-<h6 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h6><p>本文由<a href="xingdi.me">邢迪</a>创作和发表，采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br>本文链接：<a href="http://xingdi.me/2017/02/28/js学习笔记一/">http://xingdi.me/2017/02/28/js学习笔记一/</a></p>
+<h3 id="以上内容摘自JavaScript高级程序设计（第3版）前三章要点"><a href="#以上内容摘自JavaScript高级程序设计（第3版）前三章要点" class="headerlink" title="以上内容摘自JavaScript高级程序设计（第3版）前三章要点"></a>以上内容摘自JavaScript高级程序设计（第3版）前三章要点</h3><h6 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h6><p>本文由<a href="xingdi.me">邢迪</a>创作和发表，采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br>本文链接：<a href="http://xingdi.me/2017/02/28/js学习笔记一/">http://xingdi.me/2017/02/28/js学习笔记一/</a></p>
 
       
         
@@ -579,6 +567,22 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">学习笔记</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
              
@@ -608,22 +612,6 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">Linking</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">学习笔记</a>
               </li>
             
             <div class="clearfix"></div>
