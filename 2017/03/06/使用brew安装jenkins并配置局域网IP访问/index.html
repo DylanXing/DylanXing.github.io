@@ -9,21 +9,21 @@
   <title>使用brew安装jenkins并配置局域网IP访问 | 邢迪的平行时空</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="使用brew安装jenkinsbrew install jenkins
-启动，停止，重启jenkinsbrew services start jenkinsbrew stop start jenkinsbrew services restart jenkins
-局域网使用IP访问jenkins使用brew安装jenkins会避免很多其他安装方式产生的用户权限问题，但是会将httpListenAdd">
+启动，停止，重启jenkinsbrew services start jenkinsbrew services stop  jenkinsbrew services restart jenkins
+局域网使用IP访问jenkins使用brew安装jenkins会避免很多其他安装方式产生的用户权限问题，但是会将httpListe">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用brew安装jenkins并配置局域网IP访问">
 <meta property="og:url" content="http://xingdi.me/2017/03/06/使用brew安装jenkins并配置局域网IP访问/index.html">
 <meta property="og:site_name" content="邢迪的平行时空">
 <meta property="og:description" content="使用brew安装jenkinsbrew install jenkins
-启动，停止，重启jenkinsbrew services start jenkinsbrew stop start jenkinsbrew services restart jenkins
-局域网使用IP访问jenkins使用brew安装jenkins会避免很多其他安装方式产生的用户权限问题，但是会将httpListenAdd">
-<meta property="og:updated_time" content="2017-03-06T03:13:09.000Z">
+启动，停止，重启jenkinsbrew services start jenkinsbrew services stop  jenkinsbrew services restart jenkins
+局域网使用IP访问jenkins使用brew安装jenkins会避免很多其他安装方式产生的用户权限问题，但是会将httpListe">
+<meta property="og:updated_time" content="2017-03-16T03:00:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用brew安装jenkins并配置局域网IP访问">
 <meta name="twitter:description" content="使用brew安装jenkinsbrew install jenkins
-启动，停止，重启jenkinsbrew services start jenkinsbrew stop start jenkinsbrew services restart jenkins
-局域网使用IP访问jenkins使用brew安装jenkins会避免很多其他安装方式产生的用户权限问题，但是会将httpListenAdd">
+启动，停止，重启jenkinsbrew services start jenkinsbrew services stop  jenkinsbrew services restart jenkins
+局域网使用IP访问jenkins使用brew安装jenkins会避免很多其他安装方式产生的用户权限问题，但是会将httpListe">
   
   
     <link rel="icon" href="/img/favicon.ico">
@@ -206,7 +206,7 @@ var _hmt = _hmt || [];
     <div class="article-entry" itemprop="articleBody">
       
         <h5 id="使用brew安装jenkins"><a href="#使用brew安装jenkins" class="headerlink" title="使用brew安装jenkins"></a>使用brew安装jenkins</h5><p><code>brew install jenkins</code></p>
-<h5 id="启动，停止，重启jenkins"><a href="#启动，停止，重启jenkins" class="headerlink" title="启动，停止，重启jenkins"></a>启动，停止，重启jenkins</h5><p><code>brew services start jenkins</code><br><code>brew stop start jenkins</code><br><code>brew services restart jenkins</code></p>
+<h5 id="启动，停止，重启jenkins"><a href="#启动，停止，重启jenkins" class="headerlink" title="启动，停止，重启jenkins"></a>启动，停止，重启jenkins</h5><p><code>brew services start jenkins</code><br><code>brew services stop  jenkins</code><br><code>brew services restart jenkins</code></p>
 <h5 id="局域网使用IP访问jenkins"><a href="#局域网使用IP访问jenkins" class="headerlink" title="局域网使用IP访问jenkins"></a>局域网使用IP访问jenkins</h5><p>使用brew安装jenkins会避免很多其他安装方式产生的用户权限问题，但是会将httpListenAddress默认设置为127.0.0.1，这样我们虽然可以在本地用<code>localhost:8080</code>访问，但是本机和局域网均无法用ip访问。解决办法为修改两个路径下的plist配置。并重启<br><code>～/Library/LaunchAgents/homebrew.mxcl.jenkins.plist</code><br><code>/usr/local/opt/jenkins/homebrew.mxcl.jenkins.plist</code><br>将上面两个plist中的httpListenAddress后的ip地址，修改为本机IP或者0.0.0.0即可。</p>
 <h6 id="版权声明"><a href="#版权声明" class="headerlink" title="版权声明"></a>版权声明</h6><p>本文由<a href="xingdi.me">邢迪</a>创作和发表，采用<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="external">创作共用保留署名-非商业-禁止演绎4.0国际许可证</a>。<br>本文链接：<a href="http://xingdi.me/2017/03/06/使用brew安装jenkins并配置局域网IP访问/">http://xingdi.me/2017/03/06/使用brew安装jenkins并配置局域网IP访问/</a></p>
 
@@ -456,19 +456,7 @@ var _hmt = _hmt || [];
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">前端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -476,7 +464,15 @@ var _hmt = _hmt || [];
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">web开发</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -485,18 +481,6 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">JS对象</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">任何来源</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">macOS 10.12</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mac系统</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -513,6 +497,22 @@ var _hmt = _hmt || [];
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">持续集成</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">任何来源</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">macOS 10.12</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">mac系统</a>
               </li>
              
               <li class="article-tag-list-item">
